@@ -74,10 +74,6 @@ module Para
       end
     end
 
-    initializer 'Check for extensions installation' do
-      Para::PostgresExtensionsChecker.check_all
-    end
-
     initializer 'Initialize simple form wrappers' do
       Para::SimpleFormConfig.configure
     end

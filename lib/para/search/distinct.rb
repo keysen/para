@@ -84,15 +84,11 @@ module Para
       end
 
       def format_string(sql)
-        sql_lower(sql_unaccent(sql_stringify(sql)))
+        sql_lower(sql_stringify(sql))
       end
 
       def sql_lower(sql)
         Arel::Nodes::NamedFunction.new('LOWER', [sql])
-      end
-
-      def sql_unaccent(sql)
-        Arel::Nodes::NamedFunction.new('UNACCENT', [sql])
       end
 
       def sql_stringify(sql)

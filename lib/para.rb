@@ -33,8 +33,6 @@ require 'vertebra'
 require 'rails/routing_mapper'
 require 'rails/relation_length_validator'
 
-require 'para/postgres_extensions_checker'
-
 module Para
   extend ActiveSupport::Autoload
 

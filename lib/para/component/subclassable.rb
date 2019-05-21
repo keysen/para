@@ -16,8 +16,8 @@ module Para
       end
 
       def subclass_names
-        @subclass_names ||= if subclasses.present?
-          eval(subclasses)
+        @subclass_names ||= if (subclasses.present? && subclasses.is_a?(Array))
+          subclasses
         else
           []
         end

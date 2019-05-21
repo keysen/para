@@ -16,10 +16,7 @@ module Para
       before_validation :ensure_model_type
 
       def namespaced?
-        case namespaced
-        when 'true' then true
-        else false
-        end
+        !!namespaced
       end
 
       def resources
