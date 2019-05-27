@@ -51,6 +51,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'vertebra', '~> 0.1', '>= 0.1.2'
 
   s.add_dependency 'rspec-core'
-
-  s.add_dependency 'pg'
 end
